@@ -4,7 +4,7 @@ git clone https://zadaniaam@github.com/zadaniaam/Zadania-AM.git zadaniaAM
 cd zadaniaAM
 git pull
 // tutaj zmieniamy pliki //
-git add nowy_plik  // jesli byly nowe pliki
+git add nowy_plik  // jesli byla zmiana w pliku nowy_plik
 git commit -m 'wersja po zadaniu s03e05'
 git push
 
@@ -12,4 +12,9 @@ hasło to am12345
 
 GIT wbrew pozorom nie jest zajebisty w przeplotach (tzn latwo mozemy stworzyc dwie galezie drzewa a tego jednak bysmy nie chcieli), więc proponuje, żeby w repo przetrzymywać pliki nazwane np hanys3.lyx   ( to beda moje zadania z serii 3).
 
+2. Podział zadań: Proponuje zrobic tak, że każda osoba bierze zadania takie, że numer_zadania-numer_serii = x mod 3. To bedzie w miare losowy i moze sprawiedliwy podzial. To znaczy z pewnością będzie tak, że ktoś jakiegoś zadania nie bedzie umiał zrobić (pewnie nawet bedzie takie zadanie ze zaden z nas nie bedzie umiał go zrobić), ale wtedy mozemy nad nimi razem posiedzieć, albo jak juz sie nie uda spytać wasilewskiego czy kociuma ;)
+To moze: (chyba ze ktos chce robic konkretne zadania )
+Tomek x = 2
+Robert x = 1
+ja x = 0
 
