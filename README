@@ -1,0 +1,15 @@
+1. to na początek obsługa repozytorium (jakbyscie zapomnieli jak sie gitem poslugiwac)
+
+git clone https://zadaniaam@github.com/zadaniaam/Zadania-AM.git zadaniaAM
+cd zadaniaAM
+git pull
+// tutaj zmieniamy pliki //
+git add nowy_plik  // jesli byly nowe pliki
+git commit -m 'wersja po zadaniu s03e05'
+git push
+
+hasło to am12345 
+
+GIT wbrew pozorom nie jest zajebisty w przeplotach (tzn latwo mozemy stworzyc dwie galezie drzewa a tego jednak bysmy nie chcieli), więc proponuje, żeby w repo przetrzymywać pliki nazwane np hanys3.lyx   ( to beda moje zadania z serii 3).
+
+
