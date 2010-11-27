@@ -1,0 +1,399 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language polish
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\series bold
+S02Z02.
+
+\series default
+ Postaram się wskazać szukany zbiór 
+\begin_inset Formula $B$
+\end_inset
+
+ wśród zbiorów postaci 
+\begin_inset Formula $B_{r}=B(0,r)\cap A$
+\end_inset
+
+.
+ Wiemy, że 
+\begin_inset Formula $B_{r}$
+\end_inset
+
+ jest mierzalne, jako przecięcie dwóch zbiorów mierzalnych.
+ Pokażę teraz, że a) funkcja 
+\begin_inset Formula $f(r)=\mu(B_{r})$
+\end_inset
+
+ jest ciągła.
+ b) 
+\begin_inset Formula $\underset{r\rightarrow\infty}{lim}\mu(B_{r})=\mu(A)$
+\end_inset
+
+.Wtedy z własności Darobux funkcji 
+\begin_inset Formula $f$
+\end_inset
+
+, teza będzie spełniona.
+\end_layout
+
+\begin_layout Standard
+a) Wybierzmy dowolny 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ i 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Przyjmując 
+\begin_inset Formula $\delta\leq\frac{\epsilon}{2}$
+\end_inset
+
+, otrzymuję dla dowolnego 
+\begin_inset Formula $y>x$
+\end_inset
+
+ 
+\begin_inset Formula $\mid x-y\mid\leq\delta\Rightarrow\mu(B(0,y)\backslash B(0,x))\leq\epsilon$
+\end_inset
+
+, ale 
+\begin_inset Formula $f(y)-f(x)=\mu(B_{y})-\mu(B_{x})=\mu(B_{y}\backslash B_{x})=\mu(A\cap(B(0,y)\backslash B(0,x)))\leq\epsilon.$
+\end_inset
+
+ Dowód kiedy 
+\begin_inset Formula $y<x$
+\end_inset
+
+ jest analogiczny.
+\end_layout
+
+\begin_layout Standard
+b) Wiemy, że 
+\begin_inset Formula $A\subset\overset{\infty}{\underset{k=1}{\bigcup}}A\cap(B(0,k)\backslash B(0,k-1))$
+\end_inset
+
+, oraz, że te zbiory są rozłączne, zatem: 
+\begin_inset Formula $\mu(A)=\sum\mu(A\cap(B(0,k)\backslash B(0,k-1)))$
+\end_inset
+
+, zatem 
+\begin_inset Formula $\mu(A)=\underset{k\rightarrow\infty}{\lim}\mu(A\cap B(0,k))$
+\end_inset
+
+, z czego wynika już istnienie granicy.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+S02Z05.
+
+\series default
+ Załóżmy niewprost, że taki odcinek nie istnieje, czyli 
+\begin_inset Formula $\underset{\epsilon>0}{\forall}\underset{x<\epsilon}{\exists}(B+x)\cap B=\emptyset$
+\end_inset
+
+.
+ Ustalmy zatem dowolny 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+.
+ Niech teraz 
+\begin_inset Formula $P_{n}$
+\end_inset
+
+ będzie pokryciem 
+\begin_inset Formula $B$
+\end_inset
+
+ realizującym miarę 
+\begin_inset Formula $l^{1}$
+\end_inset
+
+ z dokładnością do 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ czyli: 
+\begin_inset Formula $\mu(B)+\epsilon\geq\underset{n=1}{\overset{\infty}{\sum}}|P_{n}|$
+\end_inset
+
+, 
+\begin_inset Formula $B\subset\bigcup P_{n}$
+\end_inset
+
+.
+ Weźmy teraz takie 
+\begin_inset Formula $N$
+\end_inset
+
+, że 
+\begin_inset Formula $\underset{n=N+1}{\overset{\infty}{\sum}}|P_{n}|\leq\epsilon$
+\end_inset
+
+.
+ (ten szereg jest zbieżny, więc takie istnieje).
+ Oznaczam przez 
+\begin_inset Formula $a_{n},\, b_{n}$
+\end_inset
+
+ końce odcinków 
+\begin_inset Formula $P_{n}$
+\end_inset
+
+.
+ Niech 
+\begin_inset Formula $x$
+\end_inset
+
+ będzie taki, że 
+\begin_inset Formula $(B+x)\cap B=\emptyset$
+\end_inset
+
+ oraz 
+\begin_inset Formula $x<\frac{\epsilon}{N}$
+\end_inset
+
+.
+ Rozważmy teraz następujące pokrycie zbioru 
+\begin_inset Formula $(B+x)\cup B$
+\end_inset
+
+ : 
+\begin_inset Formula \begin{eqnarray*}
+ & X=\overset{N}{\underset{n=1}{\bigcup}}(a_{n},b_{n}+\frac{\epsilon}{N})\cup\overset{\infty}{\underset{n=N+1}{\bigcup}}P_{n}\cup\overset{\infty}{\underset{n=N+1}{\bigcup}}(P_{n}+x)\\
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Widzimy wtedy, że 
+\begin_inset Formula \begin{eqnarray*}
+ & 2\cdot\mu(B)=\mu((B+x)\cup B)\leq\mu(X)\leq\mu(\overset{N}{\underset{n=1}{\bigcup}}(a_{n},b_{n}+\frac{\epsilon}{N}))+2\mu(\overset{\infty}{\underset{n=N+1}{\bigcup}}P_{n})\leq\\
+ & \leq\underset{n=1}{\overset{N}{\sum}}|P_{n}|+\epsilon+2\underset{n=N+1}{\overset{\infty}{\sum}}|P_{n}|\le\mu(B)+3\epsilon\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Widzimy, że jeżeli w tym rozumowaniu przyjmiemy 
+\begin_inset Formula $\epsilon<\frac{\mu(B)}{3}$
+\end_inset
+
+, to otrzymamy szukaną sprzeczność.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+S02Z08.
+
+\series default
+ Jeżeli zbiór 
+\begin_inset Formula $A$
+\end_inset
+
+ jest niemierzalny, to cały jest swoim podzbiorem niemierzalnym.
+ Możemy zatem dalej przyjąć, że 
+\begin_inset Formula $A$
+\end_inset
+
+ jest 
+\begin_inset Formula $l^{1}$
+\end_inset
+
+-mierzalny.
+\end_layout
+
+\begin_layout Standard
+Z zadania S02Z04 wiemy, że Istnieje otwarty odcinek 
+\begin_inset Formula $P$
+\end_inset
+
+ taki, że 
+\begin_inset Formula $P\cap A$
+\end_inset
+
+ ma dodatnią miarę, oznaczmy ten zbiór przez 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Przeprowadzę teraz konstrukcję podobną do konstrukcji zbioru Vittali'ego.
+\end_layout
+
+\begin_layout Standard
+Wprowadźmy sobie relację 
+\begin_inset Formula $\sim$
+\end_inset
+
+ taką że 
+\begin_inset Formula $x\sim y\Leftrightarrow x-y\in\mathbb{Q}$
+\end_inset
+
+.
+ I podzielmy wszystkie liczby rzeczywiste na klasy abstrakcji względem tej
+ relacji.
+ Niech teraz 
+\begin_inset Formula $C$
+\end_inset
+
+ będzie zbiorem tych klas, które mają niepuste przecięcie z 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Natomiast zbiór 
+\begin_inset Formula $D$
+\end_inset
+
+ będzie zbiorem świadków tych niepustych przecięć, czyli dla każdego elementu
+ z 
+\begin_inset Formula $C$
+\end_inset
+
+ wybieram jeden element z klasy, ten który jednocześnie należy do 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Postaram się
+\begin_inset space \space{}
+\end_inset
+
+uzasadnić, że 
+\begin_inset Formula $D$
+\end_inset
+
+ spełnia założenia zadania.
+\end_layout
+
+\begin_layout Standard
+Wiemy, że 
+\begin_inset Formula $D\subset B\subset A$
+\end_inset
+
+.
+ Więc wystarczy jeszcze uzasadnić niemierzalność.
+ Niech 
+\begin_inset Formula $d$
+\end_inset
+
+ oznacza długość odcinka 
+\begin_inset Formula $P$
+\end_inset
+
+, natomiast 
+\begin_inset Formula $W=\mathbb{Q}\cap[-d,\, d]$
+\end_inset
+
+.
+ Załóżmy nie wprost, że 
+\begin_inset Formula $D$
+\end_inset
+
+ jest mierzalny w sensie Lebesgue'a.
+ Wtedy, albo 
+\begin_inset Formula $\mu(D)=0$
+\end_inset
+
+, albo 
+\begin_inset Formula $\mu(D)\neq0$
+\end_inset
+
+.
+ W pierwszym przypadku, wiemy, że także 
+\begin_inset Formula $D+W=\{d+w:\, d\in D,\, w\in W\}$
+\end_inset
+
+ jest miary 
+\begin_inset Formula $0$
+\end_inset
+
+, gdyż jest to przeliczalna suma kopii zbioru 
+\begin_inset Formula $D$
+\end_inset
+
+ przesuniętych o pewne liczby wymierne (więc te przesunięcia są rozłączne
+ bo z każdej klasy wybieraliśmy jedną liczbę).
+ Jednak 
+\begin_inset Formula $B\subset D+W$
+\end_inset
+
+, co daje sprzeczność.
+ Jeżeli 
+\begin_inset Formula $\mu(D)\neq0$
+\end_inset
+
+, to 
+\begin_inset Formula $\infty=\sum_{k=1}^{\infty}\mu(D)=\mu(D+W)\leq3\mu(P)$
+\end_inset
+
+, co daje sprzeczność.
+ Widzimy zatem, że 
+\begin_inset Formula $D$
+\end_inset
+
+ jest nie mierzalnym podzbiorem 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document
