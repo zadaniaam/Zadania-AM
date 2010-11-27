@@ -1,0 +1,362 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language polish
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\series bold
+S01Z02.
+
+\series default
+ Oznaczam 
+\begin_inset Formula $\mathcal{P}_{\sigma\delta}$
+\end_inset
+
+ przez 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ Wybierzmy dowolny 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+.
+ Wiemy, że dla każdego 
+\begin_inset Formula $n$
+\end_inset
+
+ istnieje taki ciąg zbiorów (bo z definicji 
+\begin_inset Formula $\mu(A)$
+\end_inset
+
+ jest 
+\begin_inset Formula $inf$
+\end_inset
+
+ po sumach tego rodzaju) 
+\begin_inset Formula $\{E_{nk}\}_{k=1}^{\infty}\in P$
+\end_inset
+
+, że 
+\begin_inset Formula $\mu(A)+\frac{\epsilon}{2^{n}}\geq\overset{\infty}{\underset{k=1}{\sum}}\tau(E_{nk})$
+\end_inset
+
+, 
+\begin_inset Formula $\overset{\infty}{\underset{k=1}{\bigcup}}E_{nk}\supset A$
+\end_inset
+
+, 
+\begin_inset Formula $E_{nk}\in\mathcal{P}$
+\end_inset
+
+ .
+ Wybierając wtedy 
+\begin_inset Formula $B=\overset{\infty}{\underset{n=1}{\bigcap}}\overset{\infty}{\underset{k=1}{\bigcup}}E_{nk}$
+\end_inset
+
+ mamy 
+\begin_inset Formula $A\subset B$
+\end_inset
+
+, gdyż 
+\begin_inset Formula $\underset{n}{\forall}A\subset\overset{\infty}{\underset{k=1}{\bigcup}}E_{nk}$
+\end_inset
+
+, więc należy też do przecięcia.
+ Wynika z tego, że 
+\begin_inset Formula $\mu(A)\leq\mu(B)$
+\end_inset
+
+.
+ Mamy także: 
+\begin_inset Formula $\overset{\infty}{\underset{n=1}{\bigcap}}\overset{\infty}{\underset{k=1}{\bigcup}}E_{nk}\subset\overset{\infty}{\underset{k=1}{\bigcup}}E_{nk}$
+\end_inset
+
+, zatem 
+\begin_inset Formula $\underset{n}{\forall}\mu(B)\leq\overset{\infty}{\underset{k=1}{\sum}}\tau(E_{nk})\leq\mu(A)+\frac{\epsilon}{2^{n}}$
+\end_inset
+
+, zatem musi być także: 
+\begin_inset Formula $\mu(B)\leq\mu(A)$
+\end_inset
+
+.
+ Co oznacza, że 
+\begin_inset Formula $B$
+\end_inset
+
+ jest dobrze wybrany.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+S01Z05.
+
+\series default
+ Mierzalna otoczka 
+\begin_inset Formula $A$
+\end_inset
+
+ to taki zbiór 
+\begin_inset Formula $B$
+\end_inset
+
+, że 
+\begin_inset Formula $A\subset B$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ jest
+\begin_inset Formula $\mu$
+\end_inset
+
+-mierzalne i 
+\begin_inset Formula $\mu(A)=\mu(B)$
+\end_inset
+
+.
+ Weźmy teraz dowolne 
+\begin_inset Formula $C\subset B\backslash A$
+\end_inset
+
+, mierzalne.
+ Wtedy 
+\begin_inset Formula $\mu(B)=\mu(B\cap C)+\mu(B\backslash C)=\mu(C)+\mu(B\backslash C)\geq\mu(C)+\mu(A\backslash C)=$
+\end_inset
+
+
+\begin_inset Formula $\mu(C)+\mu(A)=\mu(C)+\mu(B)$
+\end_inset
+
+, nierówność w drugą stronę jest oczywista.
+ Po odjęciu 
+\begin_inset Formula $\mu(B)$
+\end_inset
+
+ stronami otrzymuję 
+\begin_inset Formula $\mu(C)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+S01Z08.
+
+\series default
+ a) Jeżeli 
+\begin_inset Formula $X$
+\end_inset
+
+ ma więcej niż jeden element to biorąc 
+\begin_inset Formula $\emptyset\neq A\neq X$
+\end_inset
+
+, wiemy, że 
+\begin_inset Formula $A$
+\end_inset
+
+ jest niemierzalne, bo 
+\begin_inset Formula $1=\mu(X)=\mu(A)+\mu(X\backslash A)=2$
+\end_inset
+
+, zatem jedynimi zbiorami mierzalnymi są: 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ i 
+\begin_inset Formula $X$
+\end_inset
+
+ (kiedy 
+\begin_inset Formula $X$
+\end_inset
+
+ ma 
+\begin_inset Formula $0$
+\end_inset
+
+ lub 
+\begin_inset Formula $1$
+\end_inset
+
+ element to jest to oczywiste).
+ Wiemy, że 
+\begin_inset Formula $\{y\}$
+\end_inset
+
+ jest borelowski, więc 
+\begin_inset Formula $f^{-1}(\{y\})$
+\end_inset
+
+ musi być 
+\begin_inset Formula $\mu$
+\end_inset
+
+-mierzalny, zatem jest pusty lub równy 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ dla dwóch różnych 
+\begin_inset Formula $y$
+\end_inset
+
+ nie może wyjść 
+\begin_inset Formula $X$
+\end_inset
+
+ (bo dla każdego elementu 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ nie może przyjąć dwóch wartości), dla pewnego musi wyjść.
+ Więc są to funkcje stałe.
+\end_layout
+
+\begin_layout Standard
+b) Zbiory miary 
+\begin_inset Formula $0$
+\end_inset
+
+ są mierzalne, ich dopełnienia też są mierzalne.
+ W tym wypadku zbiory nieprzeliczalne, lub te których dopełnienia są nieprzelicz
+alne, są niemierzalne (bo 
+\begin_inset Formula $1=\mu(X)=\mu(A)+\mu(X\backslash A)=2$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Przeciwobrazy singletonów są mierzalne więc są przeliczalne, a jeden jest
+ nieprzeliczalny.
+ Pokażę teraz, że sytuacja kiedy 
+\begin_inset Formula $B=f(X)$
+\end_inset
+
+ jest nieprzeliczalny nie może mieć miejsca.
+ Weźmy sobie podział 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ na odcinki 
+\begin_inset Formula $[k,\, k+1)$
+\end_inset
+
+ wtedy wiemy, że istnieje takie 
+\begin_inset Formula $k$
+\end_inset
+
+, że 
+\begin_inset Formula $|[k,k+1)\cap B|=c$
+\end_inset
+
+, nie mogą istnieć 
+\begin_inset Formula $2$
+\end_inset
+
+ bo wtedy ich przeciwobrazy nie były by mierzalne.
+ Oznaczmy 
+\begin_inset Formula $C_{0}=[k,k+1)$
+\end_inset
+
+, dzieląc teraz 
+\begin_inset Formula $C_{k}$
+\end_inset
+
+ na dwie równe części znowu tylko jedna jest mocy kontinuum, i ją oznaczamy
+ przez 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ postępując analogicznie uzyskujemy ciąg zbiorów mocy 
+\begin_inset Formula $c$
+\end_inset
+
+ zstępujący o średnicach malejących do 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ spójrzmy teraz na zbiory 
+\begin_inset Formula $D_{0}=B\cap(\mathbb{R}\backslash C_{0})$
+\end_inset
+
+, 
+\begin_inset Formula $D_{k}=B\cap(C_{k-1}\backslash C_{k})$
+\end_inset
+
+, wiemy, że wszystkie są przeliczalne, jest to zatem rodzina zbiorów przeliczaln
+ych których suma jest równa 
+\begin_inset Formula $\bigcup D_{i}=B\cap(\mathbb{R}\backslash\bigcap C_{i}$
+\end_inset
+
+), co jest równe 
+\begin_inset Formula $B$
+\end_inset
+
+ lub 
+\begin_inset Formula $B\backslash\{y\}$
+\end_inset
+
+ (zależy czy 
+\begin_inset Formula $\bigcap C_{i}$
+\end_inset
+
+ jest puste czy ma jeden punkt), zatem jest nieprzeliczalne co daje sprzeczność.
+\end_layout
+
+\end_body
+\end_document
