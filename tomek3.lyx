@@ -1,0 +1,295 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language polish
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\series bold
+S03Z02.
+
+\series default
+ Ze zbieżności w mierze: 
+\begin_inset Formula $\underset{\epsilon>0}{\forall}\underset{k\rightarrow\infty}{\lim}\mu(\{x:\,\mid f_{n}(x)-f(x)\mid>\epsilon\})=0$
+\end_inset
+
+, (komuś nie udało się przepisać treści) wynika, że: 
+\begin_inset Formula $\underset{k}{\forall}\underset{N}{\exists}\underset{n>N}{\forall}\mu(\{x:\,\mid f_{n}(x)-f(x)\mid>\frac{1}{k}\})<\frac{1}{2^{k}}$
+\end_inset
+
+, z czego wynika że możemy wybrać ciąg rosnący 
+\begin_inset Formula $n_{k}$
+\end_inset
+
+, spełniający te zależności (
+\begin_inset Formula $n_{k}$
+\end_inset
+
+ spełnia to dla wszystkich poprzednich 
+\begin_inset Formula $k$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Jeżeli teraz przyjmiemy: 
+\begin_inset Formula $A_{m}=A\backslash\underset{k=m}{\overset{\infty}{\bigcup}}\{x\in A:\,\mid f_{n_{k}}(x)-f(x)\mid>\frac{1}{k}\}$
+\end_inset
+
+, wtedy dla każdego elementu 
+\begin_inset Formula $x\in A_{m}$
+\end_inset
+
+ i 
+\begin_inset Formula $k\geq m$
+\end_inset
+
+ mamy: 
+\begin_inset Formula $\mid f_{n_{k}}(x)-f(x)\mid\leq\frac{1}{k},$
+\end_inset
+
+ oraz:
+\begin_inset Formula \begin{eqnarray*}
+ & \mu(A\backslash A_{m})=\mu(\underset{k=m}{\overset{\infty}{\bigcup}}\{x\in A:\,\mid f_{n_{k}}(x)-f(x)\mid>\frac{1}{k}\})\leq\frac{1}{2^{m-1}}\\
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Widzimy, teraz że: 
+\begin_inset Formula $D=A\backslash\underset{m=1}{\overset{\infty}{\bigcup}}A_{m}\subset A\backslash A_{m},$
+\end_inset
+
+ zatem 
+\begin_inset Formula $\mu(A\backslash\underset{m=1}{\overset{\infty}{\bigcup}}A_{m})\leq\frac{1}{2^{m-1}}$
+\end_inset
+
+ , dla każdego 
+\begin_inset Formula $m$
+\end_inset
+
+, zatem jest równe 0.
+ 
+\end_layout
+
+\begin_layout Standard
+Dla każdego elementu 
+\begin_inset Formula $x\in A_{m}$
+\end_inset
+
+ i 
+\begin_inset Formula $k\geq m$
+\end_inset
+
+ mamy: 
+\begin_inset Formula $\mid f_{n_{k}}(x)-f(x)\mid\leq\frac{1}{k},$
+\end_inset
+
+ zatem dla każdego elementu 
+\begin_inset Formula $x\in\underset{m=1}{\overset{\infty}{\bigcup}}A_{m}$
+\end_inset
+
+ wiemy, że istnieje takie 
+\begin_inset Formula $p$
+\end_inset
+
+, że 
+\begin_inset Formula $x\in A_{p}$
+\end_inset
+
+ więc także 
+\begin_inset Formula $k\geq p$
+\end_inset
+
+ 
+\begin_inset Formula $\mid f_{n_{k}}(x)-f(x)\mid\leq\frac{1}{k}$
+\end_inset
+
+, co oznacza, że 
+\begin_inset Formula $f_{n_{k}}$
+\end_inset
+
+ zbiega do 
+\begin_inset Formula $f$
+\end_inset
+
+ na 
+\begin_inset Formula $\underset{m=1}{\overset{\infty}{\bigcup}}A_{m}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+S03Z05.
+
+\series default
+ a) W punktach z 
+\begin_inset Formula $\mathbb{R}\backslash[0,2]$
+\end_inset
+
+, można wybrać takie małe otoczenie, aby leżał w nim co najwyżej jeden punkt
+ ze zbioru 
+\begin_inset Formula $A$
+\end_inset
+
+, czyli gęstość jest równa 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Dla punktów 
+\begin_inset Formula $0$
+\end_inset
+
+ i 
+\begin_inset Formula $2$
+\end_inset
+
+ granica ta jest równa 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+, gdyż jeżeli 
+\begin_inset Formula $h<1$
+\end_inset
+
+ to 
+\begin_inset Formula $\frac{\mu(A\cap[-h,+h])}{2h}=\frac{\mu((0,h))}{2h}=\frac{1}{2}$
+\end_inset
+
+, analogicznie dla punktu 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ Dla punktów z przedziału 
+\begin_inset Formula $(0,2)$
+\end_inset
+
+ istnieje pewna kula otwarta zawarta w tym przedziale, więc dla 
+\begin_inset Formula $h<r$
+\end_inset
+
+ będziemy mieli 
+\begin_inset Formula $\frac{\mu(A\cap[-h,+h])}{2h}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+b) Przyjmuję 
+\begin_inset Formula $x_{0}=0$
+\end_inset
+
+.
+ Rozważmy Zbiór 
+\begin_inset Formula $A$
+\end_inset
+
+ równy: 
+\begin_inset Formula $A=\{0\}\cup\overset{\infty}{\underset{n=1}{\bigcup}}(\frac{1}{n}+\frac{a}{n(n-1)},\frac{1}{n-1})\cup(-\frac{1}{n-1},-\frac{1}{n}-\frac{a}{n(n-1)})$
+\end_inset
+
+.
+ Oznacza to mniej więcej: z każdego przedziału 
+\begin_inset Formula $(\frac{1}{n},\frac{1}{n-1})$
+\end_inset
+
+ biorę odcinek zajmujący 
+\begin_inset Formula $a$
+\end_inset
+
+ całej powierzchni (od lewej strony), a dla ujemnych robię symetrycznie.
+ Wtedy 
+\begin_inset Formula $A$
+\end_inset
+
+ jako suma zbiorów borelowskich jest mierzalna.
+\end_layout
+
+\begin_layout Standard
+Dla dowolnego 
+\begin_inset Formula $h<1$
+\end_inset
+
+, niech 
+\begin_inset Formula $n_{h}$
+\end_inset
+
+ oznacza najmniejszą liczbę naturalną większą od 
+\begin_inset Formula $\frac{1}{h}$
+\end_inset
+
+.
+ Wtedy możemy policzyć: 
+\begin_inset Formula \begin{eqnarray*}
+ & \mu(A\cap[-h,h])=\mu(\overset{\infty}{\underset{n=n_{h}+1}{\bigcup}}(\frac{1}{n}+\frac{a}{n(n-1)},\frac{1}{n-1})\cup(-\frac{1}{n-1},-\frac{1}{n}-\frac{a}{n(n-1)}))+\mu((A\cap[-h,h])\cap(\mathbb{R}\backslash[-\frac{1}{n_{h}},+\frac{1}{n_{h}}]))=\\
+ & 2\frac{a}{n_{h}}+o(\frac{1}{n_{h}})\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Zatem gęstość w tym punkcie wynosi: 
+\begin_inset Formula $\underset{n_{h}\rightarrow\infty}{\lim}\frac{2\frac{a}{n_{h}}+o(\frac{1}{n_{h}})}{2(\frac{1}{n_{h}}+o(\frac{1}{n_{h}}))}=a$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document
