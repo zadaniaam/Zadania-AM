@@ -36,24 +36,29 @@
 \tracking_changes false
 \output_changes false
 \author "" 
+\author "" 
 \end_header
 
 \begin_body
 
-\begin_layout Standard
-S01Z01.
+\begin_layout List
+\labelwidthstring 00.00.0000
+
+\series bold
+S01Z01:
 \end_layout
 
 \begin_layout Standard
-Pozostało nam pokazać, że 
+Skoro 
+\begin_inset Formula $\mu(\emptyset)=0$
+\end_inset
+
+ to pozostało nam pokazać, że 
 \begin_inset Formula $A\subset\overset{\infty}{\underset{n=1}{\bigcup}}A_{n}\Longrightarrow\mu(A)\leq\overset{\infty}{\underset{n=1}{\sum}}\mu(A_{n})$
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Ustalmy 
+ Ustalmy 
 \begin_inset Formula $\epsilon>0$
 \end_inset
 
@@ -79,10 +84,7 @@ wybierzmy pokrycie
 \begin_inset Formula $\{B_{m}^{n}\}_{m\in N}$
 \end_inset
 
- takie żeby:
-\end_layout
-
-\begin_layout Standard
+ takie żeby: 
 \begin_inset Formula $\mu(A_{n})\geq\left(\overset{\infty}{\underset{m=1}{\sum}}\mu(B_{m}^{n})\right)-\frac{\epsilon}{2^{n}}$
 \end_inset
 
@@ -105,14 +107,24 @@ wybierzmy pokrycie
 \begin_inset Formula $\{B_{m}^{n}\}_{m\in N}^{n\in N}$
 \end_inset
 
- jest pokryciem 
+ także jest pokryciem 
 \begin_inset Formula $A$
 \end_inset
 
-, tak więc 
-\end_layout
+, tak więc, z definicji 
+\begin_inset Formula $\mu(A)$
+\end_inset
 
-\begin_layout Standard
+:
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+
 \begin_inset Formula $\overset{\infty}{\underset{n=1}{\sum}}\overset{\infty}{\underset{m=1}{\sum}}\mu(B_{m}^{n})\geq\mu(A)$
 \end_inset
 
