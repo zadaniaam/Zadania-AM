@@ -140,5 +140,77 @@ wybierzmy pokrycie
  dowód jest zakończony.
 \end_layout
 
+\begin_layout List
+\labelwidthstring 00.00.0000
+
+\series bold
+S01Z04:
+\end_layout
+
+\begin_layout Standard
+Niech 
+\begin_inset Formula $A=\overset{\infty}{\underset{n=1}{\bigcup}}A_{n}$
+\end_inset
+
+ z regularności miary, istnieje 
+\begin_inset Formula $B\supset A$
+\end_inset
+
+ takie, że 
+\begin_inset Formula $\mu(B)=\mu(A)$
+\end_inset
+
+ oraz 
+\begin_inset Formula $\underset{n}{\forall}\underset{B_{n}\supset A_{n}}{\exists}\mu(B_{n})=\mu(A_{n})$
+\end_inset
+
+.
+ Weźmy 
+\begin_inset Formula $C_{n}=B\cap B_{n}$
+\end_inset
+
+, teraz 
+\begin_inset Formula $B_{n}\supset C_{n}\supset A_{n}$
+\end_inset
+
+ czyli 
+\begin_inset Formula $\mu(C_{n})=\mu(A_{n})$
+\end_inset
+
+, tak więc 
+\begin_inset Formula $C_{n}$
+\end_inset
+
+ jest mierzalną otoczką 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+, z drugiej strony: 
+\begin_inset Formula $\mu(A)\leq\mu(\overset{\infty}{\underset{n=1}{\bigcup}}C_{n})\leq\mu(B)=\mu(A)$
+\end_inset
+
+.
+ Stąd 
+\begin_inset Formula $\overset{\infty}{\underset{n=1}{\bigcup}}C_{n}$
+\end_inset
+
+ jest mierzalną otoczką 
+\begin_inset Formula $\overset{\infty}{\underset{n=1}{\bigcup}}A_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+
+\series bold
+S01Z07:
+\end_layout
+
+\begin_layout Standard
+Kontrprzykładem jest zbiór Vitalego.
+\end_layout
+
 \end_body
 \end_document
