@@ -1,0 +1,167 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\series bold
+s02z03
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{|A}:A\rightarrow\mathbb{R}$
+\end_inset
+
+.
+ Jeżeli 
+\begin_inset Formula $\mu(A)=0$
+\end_inset
+
+ to koniec.
+ Załóżmy więc, że 
+\begin_inset Formula $\mu(A)\neq0$
+\end_inset
+
+.
+ Z atomowości 
+\begin_inset Formula $A$
+\end_inset
+
+ wiemy, że 
+\begin_inset Formula $\mu(f_{|A}^{-1}([n,n+1]))=\mu(A)$
+\end_inset
+
+ dla pewnego 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Oznaczmy 
+\begin_inset Formula $A_{1}=[n,n+1]$
+\end_inset
+
+.
+ Dalej dzielimy to na przedziały 
+\begin_inset Formula $[n,n+\frac{1}{2}]$
+\end_inset
+
+ oraz 
+\begin_inset Formula $[n+\frac{1}{2},n+1]$
+\end_inset
+
+.
+ Jeden z nich jest taki, że 
+\begin_inset Formula $\mu(f_{|A}^{-1}(A_{2}))=\mu(A))$
+\end_inset
+
+.
+ Definiujemy tak dalej 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+.
+ W końcu 
+\begin_inset Formula $\bigcap A_{n}=\{x_{0}\}$
+\end_inset
+
+ oraz 
+\begin_inset Formula $\mu(f^{-1}(\underset{k=1}{\overset{n}{\bigcap}}A_{k}))=\mu(A)$
+\end_inset
+
+.
+ czyli ta funkcja jest stała poza zbiorem miary zero.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+s02z06
+\end_layout
+
+\begin_layout Standard
+konstrukcja:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{1}=f^{-1}([1,\infty))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g_{1}=f-\chi_{A_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{2}=g_{1}^{-1}([\frac{1}{2},\infty)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g_{2}=g_{1}-\frac{1}{2}\chi_{A_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Oczywistym jest, że te zbiory spełniają tezę.
+ A są one mierzalne ze względu na to, że każdy jest zdefiniowany jako przeciwobr
+az zbioru otwartego względem jakiejś funkcji mierzalnej (bądz różnicy funkcji
+ mierzalnych).
+ 
+\end_layout
+
+\end_body
+\end_document
