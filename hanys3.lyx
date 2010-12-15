@@ -1,0 +1,238 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\series bold
+\lang polish
+S03Z03
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+dowód nie wprost: załóżmy, że 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}f_{n}(x_{0})-f(x_{0})>0$
+\end_inset
+
+ (przypadek dla 
+\begin_inset Formula $<0$
+\end_inset
+
+ jest analogiczny).
+ Wtedy wiemy, że dla pewnego 
+\begin_inset Formula $\epsilon_{0}$
+\end_inset
+
+ istnieje 
+\begin_inset Formula $n_{0}$
+\end_inset
+
+ taki, że 
+\begin_inset Formula $\forall n\geq n_{0}$
+\end_inset
+
+ zachodzi 
+\begin_inset Formula $f_{n}(x_{0})>f(x_{0})+2\epsilon_{0}$
+\end_inset
+
+.
+ Zatem dla każdego 
+\begin_inset Formula $\epsilon<\epsilon_{0}$
+\end_inset
+
+ i 
+\begin_inset Formula $x\in(x_{0},x_{0}+\delta)$
+\end_inset
+
+, gdzie 
+\begin_inset Formula $\delta$
+\end_inset
+
+ jest tak wybrana, żeby 
+\begin_inset Formula $|f(x)-f(x_{0})|\leq\epsilon_{0}$
+\end_inset
+
+, zachodzi 
+\begin_inset Formula $f_{n}(x)\geq f_{n}(x_{0})>f(x_{0})+2\epsilon_{0}\geq f(x)+2\epsilon_{0}-\epsilon\geq f(x)+\epsilon$
+\end_inset
+
+.
+ Zatem 
+\begin_inset Formula $\underset{\epsilon\rightarrow0}{\lim}\underset{n\rightarrow\infty}{\lim}l^{1}\{x:f_{n}(x)-f(x)>\epsilon\}\geq\delta>0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang polish
+S03Z06
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+a) granica oczywiście istnieje, bo każdy monotoniczny ciąg ma granicę (być
+ może nieskończoną) .
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+\begin_inset Formula $\mu(\emptyset)=\underset{n\rightarrow\infty}{\lim}\mu_{n}(\emptyset)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Niech 
+\begin_inset Formula $A\subset\underset{k=1}{\overset{\infty}{\bigcup}}A_{k}$
+\end_inset
+
+.
+ Wtedy chce pokazać, że : 
+\lang polish
+
+\begin_inset Formula $\mu(A)\leq\underset{k=1}{\overset{\infty}{\sum}}\mu(A_{k})$
+\end_inset
+
+, czyli : 
+\begin_inset Formula $\underset{m\rightarrow\infty}{\lim}\mu_{m}(A)-\underset{m\rightarrow\infty}{\lim}\underset{k=1}{\overset{\infty}{\sum}}\mu_{m}(A_{k})\leq0$
+\end_inset
+
+, ale oczywiście 
+\begin_inset Formula $\underset{m\rightarrow\infty}{\lim}\mu_{m}(A)-\underset{m\rightarrow\infty}{\lim}\underset{k=1}{\overset{\infty}{\sum}}\mu_{m}(A_{k})=\underset{m\rightarrow\infty}{\lim}(\mu_{m}(A)-\underset{k=1}{\overset{\infty}{\sum}}\mu_{m}(A_{k}))\leq0$
+\end_inset
+
+, bo granica ciągu o wyrazach niedodatnich nie może być dodatnia.
+ Ta ostatnia granica wogóle istnieje, bo suma dwóch ciągów zbieżnych jest
+ ciągiem zbieżnym.
+ Pozostaje już tylko pokazać, że te zbiory są mierzalne.
+ Załóżmy, że jakiś zbiór nie jest mierzalny, czyli 
+\begin_inset Formula $\exists_{A_{1},A_{2}}:\mu(A_{1})<\mu(A_{1}\backslash A_{2})+\mu(A_{1}\cap A_{2})$
+\end_inset
+
+.
+ Oczywiście nie może być tak, że 
+\begin_inset Formula $\mu(A_{i})=\infty$
+\end_inset
+
+ dla 
+\begin_inset Formula $i\in\{1,2\}$
+\end_inset
+
+.
+ Zatem 
+\begin_inset Formula $\underset{m\rightarrow\infty}{\lim}\mu_{m}(A_{1})<\underset{m\rightarrow\infty}{\lim}\mu_{m}(A_{1}\backslash A_{2})+\underset{m\rightarrow\infty}{\lim}\mu_{m}(A_{1}\cap A_{2})$
+\end_inset
+
+ co wobec skończoności tych granic daje nam: 
+\begin_inset Formula $0<\underset{m\rightarrow\infty}{\lim}(\mu_{m}(A_{1}\backslash A_{2})+\mu_{m}(A_{1}\cap A_{2})-\mu_{m}(A_{1}))=0$
+\end_inset
+
+.
+ Ostatnia równość wynika z tego, że zbiory 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ są mierzalne z miarami 
+\begin_inset Formula $\mu_{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+b) Niech 
+\begin_inset Formula $X=\mathbb{R}_{+}$
+\end_inset
+
+.
+ Weźmy 
+\begin_inset Formula $A_{n}=[n,n+1)$
+\end_inset
+
+.
+ niech 
+\begin_inset Formula $\mu_{m}(A_{n})=\frac{1}{m}$
+\end_inset
+
+ oraz 
+\begin_inset Formula $\mu_{m}(\underset{k=1}{\overset{n}{\bigcup}}A_{k})=\underset{k=1}{\overset{n}{\sum}}\mu_{m}(A_{k})$
+\end_inset
+
+ oraz 
+\begin_inset Formula $\mu_{m}(\underset{k=1}{\overset{\infty}{\bigcup}}A_{k})=\infty$
+\end_inset
+
+.
+ Granica tego ciągu miar to po prostu jest 
+\begin_inset Formula $0$
+\end_inset
+
+ na zbiorach skończonej miary lebega i 
+\begin_inset Formula $\infty$
+\end_inset
+
+ na zbiorach nieskończonej miary lebega.
+ A to już nie jest miara, bo: 
+\begin_inset Formula $\underset{k=1}{\overset{\infty}{\sum}}\mu(A_{k})=0<\infty=\mu(\underset{k=1}{\overset{\infty}{\bigcup}}A_{k})$
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document
