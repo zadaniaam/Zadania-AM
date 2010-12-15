@@ -1,0 +1,210 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\series bold
+S01Z03
+\end_layout
+
+\begin_layout Standard
+a) nierówność nie jest prawdziwa.
+ Weźmy 
+\begin_inset Formula $A_{n}=(n,n+1]$
+\end_inset
+
+ oraz miarę Lebega.
+ Wtedy prawa strona nierówności jest równa 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Natomiast 
+\begin_inset Formula $\mu(\underset{k=1}{\overset{\infty}{\bigcap}}\underset{n=k}{\overset{\infty}{\bigcup}}(n,n+1])=\mu(\underset{k=1}{\overset{\infty}{\bigcup}}(k,\infty))=\mu(\emptyset)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+b)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+S01Z06
+\end_layout
+
+\begin_layout Standard
+Niech 
+\begin_inset Formula $B$
+\end_inset
+
+ ma 
+\begin_inset Formula $3$
+\end_inset
+
+ elementy.
+ Niech 
+\begin_inset Formula $\mu(B)=2$
+\end_inset
+
+ oraz 
+\begin_inset Formula $\mu(C)=1$
+\end_inset
+
+ dla każdego podzbioru właściwego zbioru 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Wtedy weźmy 
+\begin_inset Formula $A$
+\end_inset
+
+ jako dowolny podzbiór 
+\begin_inset Formula $B$
+\end_inset
+
+ mający 
+\begin_inset Formula $2$
+\end_inset
+
+ elementy.
+ Wtedy 
+\begin_inset Formula $\mu(B\backslash A)$
+\end_inset
+
+ jest zbiorem jednoelementowym, ponadto ten zbiór nie jest mierzalny, więc
+ druga część zadania jest spełniona.
+ Ale 
+\begin_inset Formula $\mu(A)\neq\mu(B)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+S01Z09
+\end_layout
+
+\begin_layout Standard
+ta funkcja może być zarówno mierzalna jak i niemierzalna.
+ 
+\end_layout
+
+\begin_layout Standard
+1.
+ NIEMIERZALNA: niech 
+\begin_inset Formula $\mu$
+\end_inset
+
+ jest miarą, która zbiorom skończonym przyporządkowuje 
+\begin_inset Formula $0$
+\end_inset
+
+ a nieskończonym 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Zbiór 
+\begin_inset Formula $A=\mathbb{R}\backslash(0,1)$
+\end_inset
+
+ jest zbiorem niemierzalnym (bo 
+\begin_inset Formula $\mu(\mathbb{R})\neq\mu(\mathbb{R}\backslash(0,1))+\mu(0,1)$
+\end_inset
+
+).
+ 
+\begin_inset Formula $f^{-1}((1,2))=(1,2)$
+\end_inset
+
+, ale 
+\begin_inset Formula $(1,2)$
+\end_inset
+
+ nie jest mierzalny (bo 
+\begin_inset Formula $\mu(0,2)\neq\mu(0,1]+\mu(1,2)$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+2.
+ MIERZALNA: niech 
+\begin_inset Formula $\mu(A)=\begin{cases}
+0 & |A|=0\\
+1 & |A|=1\\
+\infty & |A|\end{cases}$
+\end_inset
+
+.
+ Wtedy każdy zbiór skończony jest niemierzalny.
+ Weźmy wtedy 
+\begin_inset Formula $A=\{0\}$
+\end_inset
+
+.
+ Wtedy 
+\begin_inset Formula $f(x)=x$
+\end_inset
+
+.
+ Przeciwobraz zbioru otwartego jest zbiorem otwartym, więc nieskończonym.
+ Ale zbiory nieskończone są mierzalne więc funkcja jest mierzalna.
+ 
+\end_layout
+
+\end_body
+\end_document
