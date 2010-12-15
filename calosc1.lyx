@@ -1,0 +1,713 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\series bold
+S01Z01
+\end_layout
+
+\begin_layout Standard
+Skoro 
+\begin_inset Formula $\mu(\emptyset)=0$
+\end_inset
+
+ to pozostało nam pokazać, że 
+\begin_inset Formula $A\subset\overset{\infty}{\underset{n=1}{\bigcup}}A_{n}\Longrightarrow\mu(A)\leq\overset{\infty}{\underset{n=1}{\sum}}\mu(A_{n})$
+\end_inset
+
+.
+ Ustalmy 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+.
+ Niech 
+\begin_inset Formula $\{A_{n}\}_{n\in N}$
+\end_inset
+
+ 
+\begin_inset Formula $A_{n}\in P$
+\end_inset
+
+ będzie dowolnym pokryciem zbioru 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Dla każdego 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+wybierzmy pokrycie 
+\begin_inset Formula $\{B_{m}^{n}\}_{m\in N}$
+\end_inset
+
+ takie żeby: 
+\begin_inset Formula $\mu(A_{n})\geq\left(\overset{\infty}{\underset{m=1}{\sum}}\mu(B_{m}^{n})\right)-\frac{\epsilon}{2^{n}}$
+\end_inset
+
+.
+ Mamy teraz 
+\begin_inset Formula $\overset{\infty}{\underset{n=1}{\sum}}\mu(A_{n})\geq\left(\overset{\infty}{\underset{n=1}{\sum}}\overset{\infty}{\underset{m=1}{\sum}}\mu(B_{m}^{n})\right)-\epsilon$
+\end_inset
+
+.
+ Z drugiej strony 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+
+\begin_inset Formula $\{B_{m}^{n}\}_{m\in N}^{n\in N}$
+\end_inset
+
+ także jest pokryciem 
+\begin_inset Formula $A$
+\end_inset
+
+, tak więc, z definicji 
+\begin_inset Formula $\mu(A)$
+\end_inset
+
+:
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+
+\begin_inset Formula $\overset{\infty}{\underset{n=1}{\sum}}\overset{\infty}{\underset{m=1}{\sum}}\mu(B_{m}^{n})\geq\mu(A)$
+\end_inset
+
+.
+ Ostatecznie 
+\begin_inset Formula $\overset{\infty}{\underset{n=1}{\sum}}\mu(A_{n})\geq\mu(A)-\epsilon$
+\end_inset
+
+ i wobec dowolności 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ dowód jest zakończony.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang polish
+S01Z02
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+Oznaczam 
+\begin_inset Formula $\mathcal{P}_{\sigma\delta}$
+\end_inset
+
+ przez 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ Wybierzmy dowolny 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+.
+ Wiemy, że dla każdego 
+\begin_inset Formula $n$
+\end_inset
+
+ istnieje taki ciąg zbiorów (bo z definicji 
+\begin_inset Formula $\mu(A)$
+\end_inset
+
+ jest 
+\begin_inset Formula $inf$
+\end_inset
+
+ po sumach tego rodzaju) 
+\begin_inset Formula $\{E_{nk}\}_{k=1}^{\infty}\in P$
+\end_inset
+
+, że 
+\begin_inset Formula $\mu(A)+\frac{\epsilon}{2^{n}}\geq\overset{\infty}{\underset{k=1}{\sum}}\tau(E_{nk})$
+\end_inset
+
+, 
+\begin_inset Formula $\overset{\infty}{\underset{k=1}{\bigcup}}E_{nk}\supset A$
+\end_inset
+
+, 
+\begin_inset Formula $E_{nk}\in\mathcal{P}$
+\end_inset
+
+ .
+ Wybierając wtedy 
+\begin_inset Formula $B=\overset{\infty}{\underset{n=1}{\bigcap}}\overset{\infty}{\underset{k=1}{\bigcup}}E_{nk}$
+\end_inset
+
+ mamy 
+\begin_inset Formula $A\subset B$
+\end_inset
+
+, gdyż 
+\begin_inset Formula $\underset{n}{\forall}A\subset\overset{\infty}{\underset{k=1}{\bigcup}}E_{nk}$
+\end_inset
+
+, więc należy też do przecięcia.
+ Wynika z tego, że 
+\begin_inset Formula $\mu(A)\leq\mu(B)$
+\end_inset
+
+.
+ Mamy także: 
+\begin_inset Formula $\overset{\infty}{\underset{n=1}{\bigcap}}\overset{\infty}{\underset{k=1}{\bigcup}}E_{nk}\subset\overset{\infty}{\underset{k=1}{\bigcup}}E_{nk}$
+\end_inset
+
+, zatem 
+\begin_inset Formula $\underset{n}{\forall}\mu(B)\leq\overset{\infty}{\underset{k=1}{\sum}}\tau(E_{nk})\leq\mu(A)+\frac{\epsilon}{2^{n}}$
+\end_inset
+
+, zatem musi być także: 
+\begin_inset Formula $\mu(B)\leq\mu(A)$
+\end_inset
+
+.
+ Co oznacza, że 
+\begin_inset Formula $B$
+\end_inset
+
+ jest dobrze wybrany.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+S01Z03
+\end_layout
+
+\begin_layout Standard
+a) nierówność nie jest prawdziwa.
+ Weźmy 
+\begin_inset Formula $A_{n}=(n,n+1]$
+\end_inset
+
+ oraz miarę Lebega.
+ Wtedy prawa strona nierówności jest równa 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Natomiast 
+\begin_inset Formula $\mu(\underset{k=1}{\overset{\infty}{\bigcap}}\underset{n=k}{\overset{\infty}{\bigcup}}(n,n+1])=\mu(\underset{k=1}{\overset{\infty}{\bigcup}}(k,\infty))=\mu(\emptyset)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+b)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+S01Z04
+\end_layout
+
+\begin_layout Standard
+Niech 
+\begin_inset Formula $A=\overset{\infty}{\underset{n=1}{\bigcup}}A_{n}$
+\end_inset
+
+ z regularności miary, istnieje 
+\begin_inset Formula $B\supset A$
+\end_inset
+
+ takie, że 
+\begin_inset Formula $\mu(B)=\mu(A)$
+\end_inset
+
+ oraz 
+\begin_inset Formula $\underset{n}{\forall}\underset{B_{n}\supset A_{n}}{\exists}\mu(B_{n})=\mu(A_{n})$
+\end_inset
+
+.
+ Weźmy 
+\begin_inset Formula $C_{n}=B\cap B_{n}$
+\end_inset
+
+, teraz 
+\begin_inset Formula $B_{n}\supset C_{n}\supset A_{n}$
+\end_inset
+
+ czyli 
+\begin_inset Formula $\mu(C_{n})=\mu(A_{n})$
+\end_inset
+
+, tak więc 
+\begin_inset Formula $C_{n}$
+\end_inset
+
+ jest mierzalną otoczką 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+, z drugiej strony: 
+\begin_inset Formula $\mu(A)\leq\mu(\overset{\infty}{\underset{n=1}{\bigcup}}C_{n})\leq\mu(B)=\mu(A)$
+\end_inset
+
+.
+ Stąd 
+\begin_inset Formula $\overset{\infty}{\underset{n=1}{\bigcup}}C_{n}$
+\end_inset
+
+ jest mierzalną otoczką 
+\begin_inset Formula $\overset{\infty}{\underset{n=1}{\bigcup}}A_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang polish
+S01Z05
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+Mierzalna otoczka 
+\begin_inset Formula $A$
+\end_inset
+
+ to taki zbiór 
+\begin_inset Formula $B$
+\end_inset
+
+, że 
+\begin_inset Formula $A\subset B$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ jest
+\begin_inset Formula $\mu$
+\end_inset
+
+-mierzalne i 
+\begin_inset Formula $\mu(A)=\mu(B)$
+\end_inset
+
+.
+ Weźmy teraz dowolne 
+\begin_inset Formula $C\subset B\backslash A$
+\end_inset
+
+, mierzalne.
+ Wtedy 
+\begin_inset Formula $\mu(B)=\mu(B\cap C)+\mu(B\backslash C)=\mu(C)+\mu(B\backslash C)\geq\mu(C)+\mu(A\backslash C)=$
+\end_inset
+
+
+\begin_inset Formula $\mu(C)+\mu(A)=\mu(C)+\mu(B)$
+\end_inset
+
+, nierówność w drugą stronę jest oczywista.
+ Po odjęciu 
+\begin_inset Formula $\mu(B)$
+\end_inset
+
+ stronami otrzymuję 
+\begin_inset Formula $\mu(C)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+S01Z06
+\end_layout
+
+\begin_layout Standard
+Niech 
+\begin_inset Formula $B$
+\end_inset
+
+ ma 
+\begin_inset Formula $3$
+\end_inset
+
+ elementy.
+ Niech 
+\begin_inset Formula $\mu(B)=2$
+\end_inset
+
+ oraz 
+\begin_inset Formula $\mu(C)=1$
+\end_inset
+
+ dla każdego podzbioru właściwego zbioru 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Wtedy weźmy 
+\begin_inset Formula $A$
+\end_inset
+
+ jako dowolny podzbiór 
+\begin_inset Formula $B$
+\end_inset
+
+ mający 
+\begin_inset Formula $2$
+\end_inset
+
+ elementy.
+ Wtedy 
+\begin_inset Formula $\mu(B\backslash A)$
+\end_inset
+
+ jest zbiorem jednoelementowym, ponadto ten zbiór nie jest mierzalny, więc
+ druga część zadania jest spełniona.
+ Ale 
+\begin_inset Formula $\mu(A)\neq\mu(B)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+S01Z07
+\end_layout
+
+\begin_layout Standard
+Kontrprzykładem jest zbiór Vitalego.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang polish
+S01Z08
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+a) Jeżeli 
+\begin_inset Formula $X$
+\end_inset
+
+ ma więcej niż jeden element to biorąc 
+\begin_inset Formula $\emptyset\neq A\neq X$
+\end_inset
+
+, wiemy, że 
+\begin_inset Formula $A$
+\end_inset
+
+ jest niemierzalne, bo 
+\begin_inset Formula $1=\mu(X)=\mu(A)+\mu(X\backslash A)=2$
+\end_inset
+
+, zatem jedynimi zbiorami mierzalnymi są: 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ i 
+\begin_inset Formula $X$
+\end_inset
+
+ (kiedy 
+\begin_inset Formula $X$
+\end_inset
+
+ ma 
+\begin_inset Formula $0$
+\end_inset
+
+ lub 
+\begin_inset Formula $1$
+\end_inset
+
+ element to jest to oczywiste).
+ Wiemy, że 
+\begin_inset Formula $\{y\}$
+\end_inset
+
+ jest borelowski, więc 
+\begin_inset Formula $f^{-1}(\{y\})$
+\end_inset
+
+ musi być 
+\begin_inset Formula $\mu$
+\end_inset
+
+-mierzalny, zatem jest pusty lub równy 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ dla dwóch różnych 
+\begin_inset Formula $y$
+\end_inset
+
+ nie może wyjść 
+\begin_inset Formula $X$
+\end_inset
+
+ (bo dla każdego elementu 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ nie może przyjąć dwóch wartości), dla pewnego musi wyjść.
+ Więc są to funkcje stałe.
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+b) Zbiory miary 
+\begin_inset Formula $0$
+\end_inset
+
+ są mierzalne, ich dopełnienia też są mierzalne.
+ W tym wypadku zbiory nieprzeliczalne, lub te których dopełnienia są nieprzelicz
+alne, są niemierzalne (bo 
+\begin_inset Formula $1=\mu(X)=\mu(A)+\mu(X\backslash A)=2$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang polish
+Przeciwobrazy singletonów są mierzalne więc są przeliczalne, a jeden jest
+ nieprzeliczalny.
+ Pokażę teraz, że sytuacja kiedy 
+\begin_inset Formula $B=f(X)$
+\end_inset
+
+ jest nieprzeliczalny nie może mieć miejsca.
+ Weźmy sobie podział 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ na odcinki 
+\begin_inset Formula $[k,\, k+1)$
+\end_inset
+
+ wtedy wiemy, że istnieje takie 
+\begin_inset Formula $k$
+\end_inset
+
+, że 
+\begin_inset Formula $|[k,k+1)\cap B|=c$
+\end_inset
+
+, nie mogą istnieć 
+\begin_inset Formula $2$
+\end_inset
+
+ bo wtedy ich przeciwobrazy nie były by mierzalne.
+ Oznaczmy 
+\begin_inset Formula $C_{0}=[k,k+1)$
+\end_inset
+
+, dzieląc teraz 
+\begin_inset Formula $C_{k}$
+\end_inset
+
+ na dwie równe części znowu tylko jedna jest mocy kontinuum, i ją oznaczamy
+ przez 
+\begin_inset Formula $C_{1}$
+\end_inset
+
+ postępując analogicznie uzyskujemy ciąg zbiorów mocy 
+\begin_inset Formula $c$
+\end_inset
+
+ zstępujący o średnicach malejących do 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ spójrzmy teraz na zbiory 
+\begin_inset Formula $D_{0}=B\cap(\mathbb{R}\backslash C_{0})$
+\end_inset
+
+, 
+\begin_inset Formula $D_{k}=B\cap(C_{k-1}\backslash C_{k})$
+\end_inset
+
+, wiemy, że wszystkie są przeliczalne, jest to zatem rodzina zbiorów przeliczaln
+ych których suma jest równa 
+\begin_inset Formula $\bigcup D_{i}=B\cap(\mathbb{R}\backslash\bigcap C_{i}$
+\end_inset
+
+), co jest równe 
+\begin_inset Formula $B$
+\end_inset
+
+ lub 
+\begin_inset Formula $B\backslash\{y\}$
+\end_inset
+
+ (zależy czy 
+\begin_inset Formula $\bigcap C_{i}$
+\end_inset
+
+ jest puste czy ma jeden punkt), zatem jest nieprzeliczalne co daje sprzeczność.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+S01Z09
+\end_layout
+
+\begin_layout Standard
+ta funkcja może być zarówno mierzalna jak i niemierzalna.
+ 
+\end_layout
+
+\begin_layout Standard
+1.
+ NIEMIERZALNA: niech 
+\begin_inset Formula $\mu$
+\end_inset
+
+ jest miarą, która zbiorom skończonym przyporządkowuje 
+\begin_inset Formula $0$
+\end_inset
+
+ a nieskończonym 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Zbiór 
+\begin_inset Formula $A=\mathbb{R}\backslash(0,1)$
+\end_inset
+
+ jest zbiorem niemierzalnym (bo 
+\begin_inset Formula $\mu(\mathbb{R})\neq\mu(\mathbb{R}\backslash(0,1))+\mu(0,1)$
+\end_inset
+
+).
+ 
+\begin_inset Formula $f^{-1}((1,2))=(1,2)$
+\end_inset
+
+, ale 
+\begin_inset Formula $(1,2)$
+\end_inset
+
+ nie jest mierzalny (bo 
+\begin_inset Formula $\mu(0,2)\neq\mu(0,1]+\mu(1,2)$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+2.
+ MIERZALNA: niech 
+\begin_inset Formula $\mu(A)=\begin{cases}
+0 & |A|=0\\
+1 & |A|=1\\
+\infty & |A|\end{cases}$
+\end_inset
+
+.
+ Wtedy każdy zbiór skończony jest niemierzalny.
+ Weźmy wtedy 
+\begin_inset Formula $A=\{0\}$
+\end_inset
+
+.
+ Wtedy 
+\begin_inset Formula $f(x)=x$
+\end_inset
+
+.
+ Przeciwobraz zbioru otwartego jest zbiorem otwartym, więc nieskończonym.
+ Ale zbiory nieskończone są mierzalne więc funkcja jest mierzalna.
+ 
+\end_layout
+
+\end_body
+\end_document
