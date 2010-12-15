@@ -1,0 +1,277 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\series bold
+SO4Z02
+\series default
+.
+ Niech 
+\begin_inset Formula $A=[0,1]$
+\end_inset
+
+, 
+\begin_inset Formula $B-\mu$
+\end_inset
+
+mierzalne (dowolne) takie, że dla 
+\begin_inset Formula $C=A\backslash B$
+\end_inset
+
+ 
+\begin_inset Formula $\mu(C)=0$
+\end_inset
+
+, 
+\begin_inset Formula $g(x)=0$
+\end_inset
+
+, 
+\begin_inset Formula $f_{n}(x)=x^{n}$
+\end_inset
+
+, 
+\begin_inset Formula $\mu=l^{1}$
+\end_inset
+
+.
+ Wtedy 
+\begin_inset Formula $f_{n}\rightarrow g$
+\end_inset
+
+ wszędzie oprócz 1.
+ 
+\begin_inset Formula $C$
+\end_inset
+
+ nie zawiera żadnego przedziału, więc w 
+\begin_inset Formula $B$
+\end_inset
+
+ istnieje ciąg 
+\begin_inset Formula $x_{k}$
+\end_inset
+
+ zbieżny do 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ zatem 
+\begin_inset Formula $\underset{n}{\forall}\underset{x\in B}{\sup}|f_{n}(x)-g(x)|=1$
+\end_inset
+
+, zatem 
+\begin_inset Formula $f_{k}\not\rightrightarrows g$
+\end_inset
+
+ na 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+S04Z05.
+
+\series default
+ Niech 
+\begin_inset Formula $h(y)=l^{1}(f^{-1}((-\infty,\, y]))$
+\end_inset
+
+, wtedy 
+\begin_inset Formula $h(y)$
+\end_inset
+
+ jest niemalejąca, bo bierzemy coraz większe zbiory.
+ Zdefiniujmy 
+\begin_inset Formula $g$
+\end_inset
+
+ następująco 
+\begin_inset Formula $g(x)=\sup\{z:\, h(z)\leq x\}$
+\end_inset
+
+ i pokażę, że ma szukane własności.
+ funkcja 
+\begin_inset Formula $g$
+\end_inset
+
+ jest niemalejąca, gdyż: dla 
+\begin_inset Formula $x_{1}<x_{2}$
+\end_inset
+
+ jeżeli 
+\begin_inset Formula $h(z)\leq x_{1}$
+\end_inset
+
+ to 
+\begin_inset Formula $h(z)\leq x_{2}$
+\end_inset
+
+ zatem 
+\begin_inset Formula $g(x_{1})\leq g(x_{2})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+ & l^{1}(\{x\in[0,1]:\, f(x)>y\})=l^{1}(f^{-1}((y,+\infty)))\\
+ & l^{1}(\{x:g(x)>y\})=1-l^{1}(\{x:g(x)\leq y\})\\
+ & l^{1}(\{x:g(x)\leq y\})=\sup\{x:g(x)\leq y\}=\sup\{x:\sup\{z:\, h(z)\leq x\}\leq y\}=h(y)=\\
+ & 1-l^{1}(f^{-1}((y,+\infty)))\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Przed ostatnia równość wynika, z faktu iż jeżeli to sup byłoby większe to
+ istnieje takie 
+\begin_inset Formula $x$
+\end_inset
+
+, że jednocześnie zachodzi: 
+\begin_inset Formula $x>h(y)$
+\end_inset
+
+, 
+\begin_inset Formula $\sup\{z:\, h(z)\leq x\}\leq y$
+\end_inset
+
+, ale to jest sprzeczne, bo jako, że 
+\begin_inset Formula $h$
+\end_inset
+
+ jest niemalejące, półciągłe górnie (tu wystarczy pokazać, że nie może być
+ tak, że dla 
+\begin_inset Formula $y'>y$
+\end_inset
+
+ mamy 
+\begin_inset Quotes eld
+\end_inset
+
+skok
+\begin_inset Quotes erd
+\end_inset
+
+, co robi się w ten sposób, że zakłada się że jest, co oznacza, że 
+\begin_inset Formula $l^{1}(f^{-1}((y,\, y']))$
+\end_inset
+
+ dla każdego 
+\begin_inset Formula $y'>y$
+\end_inset
+
+ ma miarę większą od 
+\begin_inset Formula $h(y)$
+\end_inset
+
+ o pewną 
+\begin_inset Formula $\delta$
+\end_inset
+
+, wtedy przy dowolnym 
+\begin_inset Formula $y_{n}\rightarrow y$
+\end_inset
+
+ mamy 
+\begin_inset Formula $\delta\leq\lim l^{1}(f^{-1}((y,\, y_{n}]))=l^{1}(\bigcap f^{-1}((y,\, y_{n}])=0$
+\end_inset
+
+, co daje sprzeczność) , to można wybrać 
+\begin_inset Formula $y'>y$
+\end_inset
+
+ takie, że 
+\begin_inset Formula $h(y')<x$
+\end_inset
+
+ co daje sprzeczność, bo sup musi być wtedy conajmniej 
+\begin_inset Formula $y'>y$
+\end_inset
+
+.
+ W drugą stronę, dla 
+\begin_inset Formula $x=h(y)$
+\end_inset
+
+ mamy 
+\begin_inset Formula $\sup\{z:\, h(z)\leq h(y)\}\leq y$
+\end_inset
+
+, zatem ten sup nie może być mniejszy od 
+\begin_inset Formula $h(y)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Mamy zatem funkcję 
+\begin_inset Formula $g$
+\end_inset
+
+ spełniającą warunki zadania z dokładnością do tego, że jest niemalejąca.
+ Nierosnącą otrzymujemy przez przekształcenie: 
+\begin_inset Formula $g_{1}(x)=g(1-x)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Dalej nie wiem.
+\end_layout
+
+\end_body
+\end_document
